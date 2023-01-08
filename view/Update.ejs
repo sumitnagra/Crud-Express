@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../all.css">
+
+    <link rel="stylesheet" href="/bootstrap.css">
+    <title>Update student</title>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row ">
+            <div class="col-sm-6">
+                <h3 class="alert alert-success text-center">Update student</h3>
+                <hr>
+                <form method="post" action="/update/<%=data._id %>">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" name="name" class="form-control" id="name" value="<%=data.name%>">
+                    <label for="name" class="form-label">Age</label>
+                    <input type="text" name="age" class="form-control" id="age" value="<%=data.age%>">
+                    <label for="name" class="form-label">Fees</label>
+                    <input type="text" name="fees" class="form-control" id="fees" value="<%=data.fees%>">
+                    <button type="submit" class="btn btn-success mt-4">Update</button>
+                    <a  href="/"><button class="btn btn-secondary mt-4" style="float:right">Back to Home</button></a>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="../all.js"></script>
+    <script src="/bootstrap.js"></script>
+</body>
+</html>
